@@ -1,0 +1,1289 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local LoadingScreen = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local Loading = Instance.new("TextLabel")
+local Done = Instance.new("TextLabel")
+local Loading_2 = Instance.new("TextLabel")
+local Loading_3 = Instance.new("TextLabel")
+local Loading_4 = Instance.new("TextLabel")
+local Welcome = Instance.new("Frame")
+local Welcome_2 = Instance.new("TextLabel")
+local Activate = Instance.new("TextButton")
+local TextName = Instance.new("TextLabel")
+local Credits = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local Frame_4 = Instance.new("Frame")
+local Frame_5 = Instance.new("Frame")
+local Info = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TopSpace = Instance.new("Frame")
+local X = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TopBar = Instance.new("Frame")
+local X_2 = Instance.new("TextButton")
+local TextName_2 = Instance.new("TextLabel")
+local MainFrame = Instance.new("Frame")
+local Frame_6 = Instance.new("Frame")
+local Goto = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Arrest = Instance.new("TextButton")
+local Target = Instance.new("TextButton")
+local Untarget = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local InfoButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local FlyButton = Instance.new("TextButton")
+local NoclipButton = Instance.new("TextButton")
+local SpeedButton = Instance.new("TextButton")
+local Frame_7 = Instance.new("Frame")
+local Credits_2 = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local TopSpace_2 = Instance.new("Frame")
+local X_3 = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local ComingSoon = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoadingScreen.Name = "LoadingScreen"
+LoadingScreen.Parent = ScreenGui
+LoadingScreen.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+LoadingScreen.BorderSizePixel = 0
+LoadingScreen.Position = UDim2.new(0.238894373, 0, 0.291350543, 0)
+LoadingScreen.Size = UDim2.new(0, 531, 0, 275)
+
+TextLabel.Parent = LoadingScreen
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 531, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "Xenon"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Frame.Parent = TextLabel
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0, 0, 0.860000014, 0)
+Frame.Size = UDim2.new(0, 531, 0, 7)
+
+Loading.Name = "Loading..."
+Loading.Parent = LoadingScreen
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.BackgroundTransparency = 1.000
+Loading.BorderSizePixel = 0
+Loading.Position = UDim2.new(0, 0, 0.818181813, 0)
+Loading.Size = UDim2.new(0, 531, 0, 50)
+Loading.Visible = false
+Loading.Font = Enum.Font.SourceSans
+Loading.Text = "Loading . . ."
+Loading.TextColor3 = Color3.fromRGB(0, 0, 0)
+Loading.TextScaled = true
+Loading.TextSize = 14.000
+Loading.TextWrapped = true
+
+Done.Name = "Done"
+Done.Parent = LoadingScreen
+Done.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Done.BackgroundTransparency = 1.000
+Done.BorderSizePixel = 0
+Done.Position = UDim2.new(0, 0, 0.818181813, 0)
+Done.Size = UDim2.new(0, 531, 0, 50)
+Done.Visible = false
+Done.Font = Enum.Font.SourceSans
+Done.Text = "Done!"
+Done.TextColor3 = Color3.fromRGB(0, 0, 0)
+Done.TextScaled = true
+Done.TextSize = 14.000
+Done.TextWrapped = true
+
+Loading_2.Name = "Loading"
+Loading_2.Parent = LoadingScreen
+Loading_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading_2.BackgroundTransparency = 1.000
+Loading_2.BorderSizePixel = 0
+Loading_2.Position = UDim2.new(0, 0, 0.818181813, 0)
+Loading_2.Size = UDim2.new(0, 531, 0, 50)
+Loading_2.Font = Enum.Font.SourceSans
+Loading_2.Text = "Loading . . ."
+Loading_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Loading_2.TextScaled = true
+Loading_2.TextSize = 14.000
+Loading_2.TextWrapped = true
+
+Loading_3.Name = "Loading.."
+Loading_3.Parent = LoadingScreen
+Loading_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading_3.BackgroundTransparency = 1.000
+Loading_3.BorderSizePixel = 0
+Loading_3.Position = UDim2.new(0, 0, 0.818181813, 0)
+Loading_3.Size = UDim2.new(0, 531, 0, 50)
+Loading_3.Visible = false
+Loading_3.Font = Enum.Font.SourceSans
+Loading_3.Text = "Loading . ."
+Loading_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Loading_3.TextScaled = true
+Loading_3.TextSize = 14.000
+Loading_3.TextWrapped = true
+
+Loading_4.Name = "Loading."
+Loading_4.Parent = LoadingScreen
+Loading_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading_4.BackgroundTransparency = 1.000
+Loading_4.BorderSizePixel = 0
+Loading_4.Position = UDim2.new(0, 0, 0.818181813, 0)
+Loading_4.Size = UDim2.new(0, 531, 0, 50)
+Loading_4.Visible = false
+Loading_4.Font = Enum.Font.SourceSans
+Loading_4.Text = "Loading . "
+Loading_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Loading_4.TextScaled = true
+Loading_4.TextSize = 14.000
+Loading_4.TextWrapped = true
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ScreenGui
+Welcome.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.238894373, 0, 0.291350543, 0)
+Welcome.Size = UDim2.new(0, 531, 0, 275)
+Welcome.Visible = false
+Welcome.ZIndex = 2
+
+Welcome_2.Name = "Welcome!"
+Welcome_2.Parent = Welcome
+Welcome_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome_2.BackgroundTransparency = 1.000
+Welcome_2.BorderSizePixel = 0
+Welcome_2.Size = UDim2.new(0, 531, 0, 42)
+Welcome_2.Font = Enum.Font.SourceSans
+Welcome_2.Text = "Welcome To Zenon!"
+Welcome_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcome_2.TextScaled = true
+Welcome_2.TextSize = 14.000
+Welcome_2.TextWrapped = true
+
+Activate.Name = "Activate"
+Activate.Parent = Welcome
+Activate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Activate.BackgroundTransparency = 1.000
+Activate.BorderSizePixel = 0
+Activate.Position = UDim2.new(0, 0, 0.207272738, 0)
+Activate.Size = UDim2.new(0, 531, 0, 50)
+Activate.Font = Enum.Font.SourceSans
+Activate.Text = "Activate"
+Activate.TextColor3 = Color3.fromRGB(0, 0, 0)
+Activate.TextScaled = true
+Activate.TextSize = 14.000
+Activate.TextWrapped = true
+
+TextName.Name = "TextName"
+TextName.Parent = Welcome
+TextName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextName.BackgroundTransparency = 1.000
+TextName.BorderSizePixel = 0
+TextName.Position = UDim2.new(0.926553667, 0, 0.912727296, 0)
+TextName.Size = UDim2.new(0, 39, 0, 24)
+TextName.Font = Enum.Font.SourceSans
+TextName.Text = "Zenon"
+TextName.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextName.TextScaled = true
+TextName.TextSize = 14.000
+TextName.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Welcome
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, 0.429090917, 0)
+Credits.Size = UDim2.new(0, 531, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = Welcome
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(-0.00188323914, 0, 0.650909126, 0)
+Settings.Size = UDim2.new(0, 531, 0, 50)
+Settings.Font = Enum.Font.SourceSans
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(0, 0, 0)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+Frame_2.Parent = Welcome
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.152727276, 0)
+Frame_2.Size = UDim2.new(0, 531, 0, 8)
+
+Frame_3.Parent = Welcome
+Frame_3.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+Frame_3.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0, 0, 0.389090896, 0)
+Frame_3.Size = UDim2.new(0, 531, 0, 11)
+
+Frame_4.Parent = Welcome
+Frame_4.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+Frame_4.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(-0.00188323914, 0, 0.610909104, 0)
+Frame_4.Size = UDim2.new(0, 531, 0, 11)
+
+Frame_5.Parent = Welcome
+Frame_5.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
+Frame_5.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0, 0, 0.832727313, 0)
+Frame_5.Size = UDim2.new(0, 531, 0, 11)
+
+Info.Name = "Info"
+Info.Parent = ScreenGui
+Info.Active = true
+Info.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Info.Position = UDim2.new(0.238894373, 0, 0.291350543, 0)
+Info.Size = UDim2.new(0, 530, 0, 272)
+Info.Visible = false
+Info.ZIndex = 45
+
+TextLabel_2.Parent = Info
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(0, 174, 0, 43)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.SourceSansLight
+TextLabel_2.Text = "Xenon Player Info"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TopSpace.Name = "TopSpace"
+TopSpace.Parent = Info
+TopSpace.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TopSpace.BorderSizePixel = 0
+TopSpace.Size = UDim2.new(0, 530, 0, 43)
+
+X.Name = "X"
+X.Parent = Info
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.931989908, 0, 0, 0)
+X.Size = UDim2.new(0, 36, 0, 43)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+ImageLabel.Parent = Info
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0, 0, 0.205882356, 0)
+ImageLabel.Size = UDim2.new(0, 137, 0, 150)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+TextLabel_3.Parent = Info
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.258490562, 0, 0.205882356, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Bounty:"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = Info
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.258490562, 0, 0.389705896, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Group:"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Info
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.258490562, 0, 0.573529422, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Cash:"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Info
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0, 0, 0.757352948, 0)
+TextLabel_6.Size = UDim2.new(0, 137, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Name"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TopBar.Name = "TopBar"
+TopBar.Parent = ScreenGui
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.LayoutOrder = 11
+TopBar.Position = UDim2.new(0.240700707, 0, 0.291350543, 0)
+TopBar.Size = UDim2.new(0, 529, 0, 29)
+TopBar.ZIndex = 4
+
+X_2.Name = "X"
+X_2.Parent = TopBar
+X_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X_2.BackgroundTransparency = 1.000
+X_2.Position = UDim2.new(0.954631388, 0, 0, 0)
+X_2.Size = UDim2.new(0, 24, 0, 29)
+X_2.Font = Enum.Font.SourceSans
+X_2.Text = "X"
+X_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+X_2.TextScaled = true
+X_2.TextSize = 14.000
+X_2.TextWrapped = true
+
+TextName_2.Name = "TextName"
+TextName_2.Parent = TopBar
+TextName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextName_2.BackgroundTransparency = 1.000
+TextName_2.Size = UDim2.new(0, 75, 0, 29)
+TextName_2.Font = Enum.Font.SourceSansLight
+TextName_2.Text = "Xenon"
+TextName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextName_2.TextScaled = true
+TextName_2.TextSize = 14.000
+TextName_2.TextWrapped = true
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = TopBar
+MainFrame.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+MainFrame.BorderSizePixel = 0
+MainFrame.LayoutOrder = 99
+MainFrame.Position = UDim2.new(-1.29223772e-05, 0, 1, 0)
+MainFrame.Size = UDim2.new(0, 529, 0, 245)
+
+Frame_6.Parent = MainFrame
+Frame_6.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.296786398, 0, 0, 0)
+Frame_6.Size = UDim2.new(0, 372, 0, 245)
+Frame_6.ZIndex = 2
+
+Goto.Name = "Goto"
+Goto.Parent = MainFrame
+Goto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Goto.BackgroundTransparency = 1.000
+Goto.Position = UDim2.new(0, 0, 0.22857143, 0)
+Goto.Size = UDim2.new(0, 157, 0, 31)
+Goto.Font = Enum.Font.SourceSans
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.fromRGB(0, 0, 0)
+Goto.TextScaled = true
+Goto.TextSize = 14.000
+Goto.TextWrapped = true
+
+TextBox.Parent = MainFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Position = UDim2.new(-0.00378071843, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 157, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Enter Player Name"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+Arrest.Name = "Arrest"
+Arrest.Parent = MainFrame
+Arrest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arrest.BackgroundTransparency = 1.000
+Arrest.Position = UDim2.new(0, 0, 0.355102032, 0)
+Arrest.Size = UDim2.new(0, 157, 0, 31)
+Arrest.Font = Enum.Font.SourceSans
+Arrest.Text = "Arrest"
+Arrest.TextColor3 = Color3.fromRGB(0, 0, 0)
+Arrest.TextScaled = true
+Arrest.TextSize = 14.000
+Arrest.TextWrapped = true
+
+Target.Name = "Target"
+Target.Parent = MainFrame
+Target.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Target.BackgroundTransparency = 1.000
+Target.Position = UDim2.new(0, 0, 0.48163268, 0)
+Target.Size = UDim2.new(0, 157, 0, 31)
+Target.Font = Enum.Font.SourceSans
+Target.Text = "Target"
+Target.TextColor3 = Color3.fromRGB(0, 0, 0)
+Target.TextScaled = true
+Target.TextSize = 14.000
+Target.TextWrapped = true
+
+Untarget.Name = "Untarget"
+Untarget.Parent = MainFrame
+Untarget.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Untarget.BackgroundTransparency = 1.000
+Untarget.Position = UDim2.new(0, 0, 0.608163297, 0)
+Untarget.Size = UDim2.new(0, 157, 0, 31)
+Untarget.Font = Enum.Font.SourceSans
+Untarget.Text = "Untarget"
+Untarget.TextColor3 = Color3.fromRGB(0, 0, 0)
+Untarget.TextScaled = true
+Untarget.TextSize = 14.000
+Untarget.TextWrapped = true
+
+TextButton.Name = "???"
+TextButton.Parent = MainFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0, 0, 0.734693885, 0)
+TextButton.Size = UDim2.new(0, 157, 0, 31)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "???"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+InfoButton.Name = "InfoButton"
+InfoButton.Parent = MainFrame
+InfoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoButton.BackgroundTransparency = 1.000
+InfoButton.Position = UDim2.new(0.296786398, 0, 0, 0)
+InfoButton.Size = UDim2.new(0, 123, 0, 50)
+InfoButton.ZIndex = 4
+InfoButton.Font = Enum.Font.SourceSans
+InfoButton.Text = "Info"
+InfoButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfoButton.TextScaled = true
+InfoButton.TextSize = 14.000
+InfoButton.TextWrapped = true
+
+TextButton_2.Name = "???"
+TextButton_2.Parent = MainFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0, 0, 0.861224532, 0)
+TextButton_2.Size = UDim2.new(0, 157, 0, 31)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "???"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+FlyButton.Name = "FlyButton"
+FlyButton.Parent = MainFrame
+FlyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyButton.BackgroundTransparency = 1.000
+FlyButton.Position = UDim2.new(0.52930057, 0, 0, 0)
+FlyButton.Size = UDim2.new(0, 130, 0, 50)
+FlyButton.ZIndex = 4
+FlyButton.Font = Enum.Font.SourceSans
+FlyButton.Text = "[F] Fly"
+FlyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FlyButton.TextScaled = true
+FlyButton.TextSize = 14.000
+FlyButton.TextWrapped = true
+
+NoclipButton.Name = "NoclipButton"
+NoclipButton.Parent = MainFrame
+NoclipButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipButton.BackgroundTransparency = 1.000
+NoclipButton.Position = UDim2.new(0.775047243, 0, 0, 0)
+NoclipButton.Size = UDim2.new(0, 112, 0, 50)
+NoclipButton.ZIndex = 4
+NoclipButton.Font = Enum.Font.SourceSans
+NoclipButton.Text = "[E] Noclip"
+NoclipButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoclipButton.TextScaled = true
+NoclipButton.TextSize = 14.000
+NoclipButton.TextWrapped = true
+
+SpeedButton.Name = "SpeedButton"
+SpeedButton.Parent = MainFrame
+SpeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedButton.BackgroundTransparency = 1.000
+SpeedButton.Position = UDim2.new(0.296786398, 0, 0.20408164, 0)
+SpeedButton.Size = UDim2.new(0, 123, 0, 50)
+SpeedButton.ZIndex = 4
+SpeedButton.Font = Enum.Font.SourceSans
+SpeedButton.Text = "Speed"
+SpeedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedButton.TextScaled = true
+SpeedButton.TextSize = 14.000
+SpeedButton.TextWrapped = true
+
+Frame_7.Parent = TopBar
+Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_7.Position = UDim2.new(0, 0, 2.72413731, 0)
+Frame_7.Size = UDim2.new(0, 156, 0, 6)
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = ScreenGui
+Credits_2.Active = true
+Credits_2.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Credits_2.Position = UDim2.new(0.239881545, 0, 0.291350543, 0)
+Credits_2.Size = UDim2.new(0, 530, 0, 272)
+Credits_2.ZIndex = 3
+
+TextLabel_7.Parent = Credits_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Size = UDim2.new(0, 174, 0, 43)
+TextLabel_7.ZIndex = 2
+TextLabel_7.Font = Enum.Font.SourceSansLight
+TextLabel_7.Text = "Xenon Credits"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TopSpace_2.Name = "TopSpace"
+TopSpace_2.Parent = Credits_2
+TopSpace_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TopSpace_2.BorderSizePixel = 0
+TopSpace_2.Size = UDim2.new(0, 530, 0, 43)
+
+X_3.Name = "X"
+X_3.Parent = Credits_2
+X_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X_3.BackgroundTransparency = 1.000
+X_3.Position = UDim2.new(0.931989908, 0, 0, 0)
+X_3.Size = UDim2.new(0, 36, 0, 43)
+X_3.Font = Enum.Font.SourceSans
+X_3.Text = "X"
+X_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+X_3.TextScaled = true
+X_3.TextSize = 14.000
+X_3.TextWrapped = true
+
+TextLabel_8.Parent = Credits_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0, 0, 0.183823526, 0)
+TextLabel_8.Size = UDim2.new(0, 529, 0, 47)
+TextLabel_8.Font = Enum.Font.SourceSansLight
+TextLabel_8.Text = "Credits:"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+ComingSoon.Name = "ComingSoon"
+ComingSoon.Parent = Credits_2
+ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ComingSoon.BackgroundTransparency = 1.000
+ComingSoon.Position = UDim2.new(0, 0, 0.356617659, 0)
+ComingSoon.Size = UDim2.new(0, 529, 0, 175)
+ComingSoon.Font = Enum.Font.SourceSansLight
+ComingSoon.Text = "COMING SOON"
+ComingSoon.TextColor3 = Color3.fromRGB(255, 255, 255)
+ComingSoon.TextScaled = true
+ComingSoon.TextSize = 14.000
+ComingSoon.TextWrapped = true
+
+-- Scripts:
+
+local function EBQNR_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	while true do
+	wait(0.8)
+	script.Parent.Parent.TextLabel.Text = "X"
+	wait(0.8)
+	script.Parent.Parent.TextLabel.Text = "Xe"
+	wait(0.8)
+	script.Parent.Parent.TextLabel.Text = "Xen"
+	wait(0.8)
+	script.Parent.Parent.TextLabel.Text = "Xeno"
+	wait(0.8)
+		script.Parent.Parent.TextLabel.Text = "Xenon"
+		end
+	
+end
+coroutine.wrap(EBQNR_fake_script)()
+local function TRGOA_fake_script() -- Loading_2.Script 
+	local script = Instance.new('Script', Loading_2)
+
+	 
+	-- wait(2)
+	-- game.StarterGui.ScreenGui.Frame.Loading.Text = "Loading..." 
+	-- wait(4)
+	-- game.StarterGui.ScreenGui.Frame.Loading.Text = "Done!"
+	-- wait(2)
+	-- game.StarterGui.ScreenGui.Frame.Loading.Visible = false --]
+	
+	wait(0.9)
+	
+	script.Parent.Parent.Loading.Visible = false
+	wait(0.9)
+	script.Parent.Parent["Loading."].Visible = true
+	wait(0.9)
+	script.Parent.Parent["Loading."].Visible = false
+	wait(0.9)
+	script.Parent.Parent["Loading.."].Visible = true
+	wait(0.9)
+	script.Parent.Parent["Loading.."].Visible = false
+	wait(0.9)
+	script.Parent.Parent["Loading..."].Visible = true
+	wait(0.9)
+	script.Parent.Parent["Loading..."].Visible = false
+	wait(0.9)
+	
+	wait(0.9)
+	
+	script.Parent.Parent.Loading.Visible = false
+	wait(0.9)
+	script.Parent.Parent["Loading."].Visible = true
+	wait(0.9)
+	script.Parent.Parent["Loading."].Visible = false
+	wait(0.9)
+	script.Parent.Parent["Loading.."].Visible = true
+	wait(0.9)
+	script.Parent.Parent["Loading.."].Visible = false
+	wait(0.9)
+	script.Parent.Parent["Loading..."].Visible = true
+	wait(0.9)
+	script.Parent.Parent["Loading..."].Visible = false
+	wait(0.9)
+	
+	script.Parent.Parent.Done.Visible = true
+	wait(0.5)
+	script.Parent.Parent.Parent.LoadingScreen.Visible = false
+	wait(0.5)
+	script.Parent.Parent.Parent.Welcome.Visible = true
+end
+coroutine.wrap(TRGOA_fake_script)()
+-- Loading_2.LoadingText is disabled.
+local function BNMDQVT_fake_script() -- Activate.LocalScript 
+	local script = Instance.new('LocalScript', Activate)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.TopBar.Visible = true
+		script.Parent.Parent.Parent.Welcome.Visible = false
+		end)
+end
+coroutine.wrap(BNMDQVT_fake_script)()
+local function XDSUX_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Credits.Visible = true
+		--script.Parent.Parent.Parent.Welcome.Visible = false
+		end)
+end
+coroutine.wrap(XDSUX_fake_script)()
+local function JMKRHI_fake_script() -- Frame_4.LocalScript 
+	local script = Instance.new('LocalScript', Frame_4)
+
+	frame = script.Parent.Parent.TopBar
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(JMKRHI_fake_script)()
+local function GUYLQSJ_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(GUYLQSJ_fake_script)()
+local function MNVC_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Info.Visible = false
+		--script.Parent.Parent.Parent.Parent.MainFrame.Position = {999,999},{999,999}
+		--script.Parent.Parent.Parent.Info.Position = 
+	end)
+end
+coroutine.wrap(MNVC_fake_script)()
+local function DKPL_fake_script() -- Info.LocalScript 
+	local script = Instance.new('LocalScript', Info)
+
+	frame = script.Parent.Parent.Info
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(DKPL_fake_script)()
+local function LJET_fake_script() -- X_2.LocalScript 
+	local script = Instance.new('LocalScript', X_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.TopBar.Visible = false
+		--script.Parent.Parent.Parent.Parent.MainFrame.Position = {999,999},{999,999}
+	end)
+end
+coroutine.wrap(LJET_fake_script)()
+local function KAMYDV_fake_script() -- TextName_2.Script 
+	local script = Instance.new('Script', TextName_2)
+
+	while true do
+		
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "X"
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "Xe"
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "Xen"
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "Xeno"
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "Xenon"
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "Xenon "
+	wait(0.7)
+	script.Parent.Parent.TextName.Text = "Xenon V"
+	wait(0.7)
+		script.Parent.Parent.TextName.Text = "Xenon V1"
+		end
+	
+end
+coroutine.wrap(KAMYDV_fake_script)()
+local function DSDFUET_fake_script() -- InfoButton.LocalScript 
+	local script = Instance.new('LocalScript', InfoButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Parent.Info.Visible = true
+		--script.Parent.Parent.Parent.Parent.Info.Position = {999,999},{999,999}
+	
+	end)
+end
+coroutine.wrap(DSDFUET_fake_script)()
+local function BBOEMBS_fake_script() -- FlyButton.LocalScript 
+	local script = Instance.new('LocalScript', FlyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	repeat wait() 
+	until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 700 
+	local speed = 5000 
+	
+	function Fly() 
+		local bg = Instance.new("BodyGyro", torso) 
+		bg.P = 9e4 
+		bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+		bg.cframe = torso.CFrame 
+		local bv = Instance.new("BodyVelocity", torso) 
+		bv.velocity = Vector3.new(0,0.1,0) 
+		bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+		repeat wait() 
+			plr.Character.Humanoid.PlatformStand = true 
+			if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+				speed = speed+.10+(speed/maxspeed) 
+				if speed > maxspeed then 
+					speed = maxspeed 
+				end 
+			elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+				speed = speed-1 
+				if speed < 0 then 
+					speed = 0 
+				end 
+			end 
+			if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+			elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+				bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+			else 
+				bv.velocity = Vector3.new(0,0.1,0) 
+			end 
+			bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+		until not flying 
+		ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		speed = 0 
+		bg:Destroy() 
+		bv:Destroy() 
+		plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+		if key:lower() == "f" then 
+			if flying then flying = false 
+			else 
+				flying = true 
+				Fly() 
+			end 
+		elseif key:lower() == "w" then 
+			ctrl.f = 1 
+		elseif key:lower() == "s" then 
+			ctrl.b = -1 
+		elseif key:lower() == "a" then 
+			ctrl.l = -1 
+		elseif key:lower() == "d" then 
+			ctrl.r = 1 
+		end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+		if key:lower() == "w" then 
+			ctrl.f = 0 
+		elseif key:lower() == "s" then 
+			ctrl.b = 0 
+		elseif key:lower() == "a" then 
+			ctrl.l = 0 
+		elseif key:lower() == "d" then 
+			ctrl.r = 0 
+		end 
+	end)
+		Fly()
+		end)
+end
+coroutine.wrap(BBOEMBS_fake_script)()
+local function ZNBEX_fake_script() -- NoclipButton.LocalScript 
+	local script = Instance.new('LocalScript', NoclipButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	-- Gui to Lua
+	-- Version: 3.2
+	
+	-- Instances:
+	
+	local ScreenGui = Instance.new("ScreenGui")
+	local NoclipGui = Instance.new("ScreenGui")
+	local DragFrame = Instance.new("ImageLabel")
+	local NoclipFrame = Instance.new("ImageLabel")
+	local On = Instance.new("TextLabel")
+	local Noclip = Instance.new("TextButton")
+	local TextButton = Instance.new("TextButton")
+	local Roundify = Instance.new("ImageLabel")
+	local TextLabel = Instance.new("TextLabel")
+	local X = Instance.new("TextButton")
+	local TextButton_2 = Instance.new("TextButton")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local Frame = Instance.new("Frame")
+	local TextButton_3 = Instance.new("TextButton")
+	local TextLabel_3 = Instance.new("TextLabel")
+	
+	--Properties:
+	
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+	NoclipGui.Name = "NoclipGui"
+	NoclipGui.Parent = ScreenGui
+	
+	DragFrame.Name = "DragFrame"
+	DragFrame.Parent = NoclipGui
+	DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	DragFrame.BackgroundTransparency = 1.000
+	DragFrame.Position = UDim2.new(0.0757299438, 0, 0.0495575368, 0)
+	DragFrame.Size = UDim2.new(0.200000003, 0, 0.100000001, 0)
+	DragFrame.ScaleType = Enum.ScaleType.Slice
+	DragFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+	DragFrame.SliceScale = 0.667
+	
+	NoclipFrame.Name = "NoclipFrame"
+	NoclipFrame.Parent = DragFrame
+	NoclipFrame.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+	NoclipFrame.BackgroundTransparency = 0.600
+	NoclipFrame.BorderSizePixel = 0
+	NoclipFrame.Position = UDim2.new(2.98172498, 0, 6.12007523, 0)
+	NoclipFrame.Size = UDim2.new(1.46938503, 0, 2.54469037, 0)
+	NoclipFrame.Visible = false
+	NoclipFrame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+	NoclipFrame.ImageTransparency = 1.000
+	NoclipFrame.ScaleType = Enum.ScaleType.Slice
+	NoclipFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+	
+	On.Name = "On"
+	On.Parent = NoclipFrame
+	On.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	On.BackgroundTransparency = 1.000
+	On.Position = UDim2.new(0.758313119, 0, 0.669421434, 0)
+	On.Size = UDim2.new(0.241621062, 0, 0.330578566, 0)
+	On.Font = Enum.Font.SciFi
+	On.Text = "Noclip is off"
+	On.TextColor3 = Color3.fromRGB(255, 255, 255)
+	On.TextScaled = true
+	On.TextSize = 14.000
+	On.TextWrapped = true
+	
+	Noclip.Name = "Noclip"
+	Noclip.Parent = NoclipFrame
+	Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Noclip.BackgroundTransparency = 1.000
+	Noclip.Position = UDim2.new(-0.00456204405, 0, 0.11937926, 0)
+	Noclip.Size = UDim2.new(1, 0, 0.672906339, 0)
+	Noclip.Font = Enum.Font.SciFi
+	Noclip.Text = "Noclip"
+	Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Noclip.TextScaled = true
+	Noclip.TextSize = 14.000
+	Noclip.TextWrapped = true
+	
+	TextButton.Parent = Noclip
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BackgroundTransparency = 1.000
+	TextButton.Position = UDim2.new(0.828415871, 0, -0.406988889, 0)
+	TextButton.Size = UDim2.new(0, 86, 0, 42)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = "X"
+	TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+	TextButton.TextSize = 50.000
+	
+	Roundify.Name = "Roundify"
+	Roundify.Parent = NoclipFrame
+	Roundify.AnchorPoint = Vector2.new(0.5, 0.5)
+	Roundify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Roundify.BackgroundTransparency = 1.000
+	Roundify.Position = UDim2.new(1.02292264, 0, 0.711400688, 0)
+	Roundify.Size = UDim2.new(2.04584527, 24, 1.42280149, 24)
+	Roundify.Image = "rbxassetid://3570695787"
+	Roundify.ImageColor3 = Color3.fromRGB(24, 24, 24)
+	Roundify.ImageTransparency = 1.000
+	Roundify.ScaleType = Enum.ScaleType.Slice
+	Roundify.SliceCenter = Rect.new(100, 100, 100, 100)
+	Roundify.SliceScale = 0.120
+	
+	TextLabel.Parent = NoclipFrame
+	TextLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+	TextLabel.BackgroundTransparency = 0.600
+	TextLabel.Position = UDim2.new(0, 0, -0.169147491, 0)
+	TextLabel.Size = UDim2.new(0, 493, 0, 46)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Noclip GUI v1.0.0"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextSize = 50.000
+	
+	X.Name = "X"
+	X.Parent = NoclipFrame
+	X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	X.BackgroundTransparency = 1.000
+	X.Position = UDim2.new(0.81626308, 0, -0.169535726, 0)
+	X.Size = UDim2.new(0, 93, 0, 47)
+	X.Font = Enum.Font.SourceSans
+	X.Text = "X"
+	X.TextColor3 = Color3.fromRGB(170, 0, 0)
+	X.TextSize = 50.000
+	
+	TextButton_2.Parent = DragFrame
+	TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+	TextButton_2.Position = UDim2.new(-0.378649771, 0, 5.79646063, 0)
+	TextButton_2.Size = UDim2.new(0, 167, 0, 80)
+	TextButton_2.Font = Enum.Font.SourceSans
+	TextButton_2.Text = "Open Noclip GUI"
+	TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_2.TextSize = 26.000
+	
+	Frame.Parent = TextLabel_2
+	Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.Position = UDim2.new(0, 0, 1.03773582, 0)
+	Frame.Size = UDim2.new(0, 509, 0, 45)
+	
+	TextButton_3.Parent = TextLabel_2
+	TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_3.BackgroundTransparency = 1.000
+	TextButton_3.Position = UDim2.new(0.917485237, 0, 1.05660379, 0)
+	TextButton_3.Size = UDim2.new(0, 42, 0, 19)
+	TextButton_3.Font = Enum.Font.SourceSans
+	TextButton_3.Text = "OK"
+	TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_3.TextSize = 20.000
+	
+	TextLabel_3.Parent = TextLabel_2
+	TextLabel_3.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+	TextLabel_3.Position = UDim2.new(0, 0, -0.490566045, 0)
+	TextLabel_3.Size = UDim2.new(0, 507, 0, 25)
+	TextLabel_3.Font = Enum.Font.SourceSans
+	TextLabel_3.Text = "Notification"
+	TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_3.TextSize = 20.000
+	
+	-- Scripts:
+	
+	local function GLEKL_fake_script() -- Noclip.NoScript 
+		local script = Instance.new('LocalScript', Noclip)
+	
+		local function UpdateText(Obj,strl)
+			Obj.Text = strl
+		end
+		local On = false
+		local function SetOn()
+			if On == false then
+				On = true
+			else
+				On = false
+			end
+		end
+		local Player = game.Players.LocalPlayer
+		local Button = script.Parent
+	
+		Button.MouseButton1Up:Connect(function()
+			SetOn()
+			if On then
+				UpdateText(Button, "Clip")
+				UpdateText(script.Parent.Parent.On,"Noclip is On")
+	
+			else
+				UpdateText(Button, "Noclip")
+				UpdateText(script.Parent.Parent.On, "Noclip is off")
+			end
+			while On do
+				wait()
+				pcall(function()
+					Player.Character.Humanoid:ChangeState(11)
+				end)
+			end
+		end)
+	end
+	coroutine.wrap(GLEKL_fake_script)()
+	local function ZBOJNK_fake_script() -- X.LocalScript 
+		local script = Instance.new('LocalScript', X)
+	
+		script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	
+	
+	
+	end
+	coroutine.wrap(ZBOJNK_fake_script)()
+	local function NMNOMDP_fake_script() -- TextButton_2.LocalScript 
+		local script = Instance.new('LocalScript', TextButton_2)
+	
+		local frame = script.Parent.Parent.NoclipFrame
+		local open = false
+	
+		script.Parent.MouseButton1Click:Connect(function()
+			if frame.Visible == false then
+				frame.Visible = true
+			end
+		end)
+	
+	end
+	coroutine.wrap(NMNOMDP_fake_script)()
+	local function ZULPZ_fake_script() -- TextButton_3.LocalScript 
+		local script = Instance.new('LocalScript', TextButton_3)
+	
+		script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Visible = false
+		end)
+	
+	
+	
+	end
+	coroutine.wrap(ZULPZ_fake_script)()
+	local function YWWA_fake_script() -- NoclipGui.Dragify 
+		local script = Instance.new('LocalScript', NoclipGui)
+	
+		local UIS = game:GetService("UserInputService")
+		function dragify(Frame)
+			dragToggle = nil
+			local dragSpeed = 0.50
+			dragInput = nil
+			dragStart = nil
+			local dragPos = nil
+			function updateInput(input)
+				local Delta = input.Position - dragStart
+				local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+				Frame:TweenPosition(Position,"Out","Quad",.5,true)
+			end
+			Frame.InputBegan:Connect(function(input)
+				if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+					dragToggle = true
+					dragStart = input.Position
+					startPos = Frame.Position
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragToggle = false
+						end
+					end)
+				end
+			end)
+			Frame.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+	
+			Frame.InputEnded:connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					dragStart = nil
+					dragInput = nil
+				end
+			end)
+			game:GetService("UserInputService").InputChanged:Connect(function(input)
+				if input == dragInput and dragToggle then
+					updateInput(input)
+				end
+			end)
+		end
+	
+		dragify(script.Parent.DragFrame)
+	end
+	coroutine.wrap(YWWA_fake_script)()
+		
+		end)
+end
+coroutine.wrap(ZNBEX_fake_script)()
+local function MCNFKB_fake_script() -- SpeedButton.RunScript (PUT ME IN STARTER GUI) 
+	local script = Instance.new('LocalScript', SpeedButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Player = game.Players.LocalPlayer
+		local Character = workspace:WaitForChild(Player.Name)
+			local Humanoid = Character:WaitForChild('Humanoid')
+			
+	local RunAnimation = Instance.new('Animation')
+	RunAnimation.AnimationId = 'rbxassetid://4579186274' -- Add your favorite run here!
+	RAnimation = Humanoid:LoadAnimation(RunAnimation)
+	
+	Running = true
+	
+	function Handler(BindName, InputState)
+		if InputState == Enum.UserInputState.Begin and BindName == 'RunBind' then
+			Running = true
+			Humanoid.WalkSpeed = 100
+		elseif InputState == Enum.UserInputState.End and BindName == 'RunBind' then
+			Running = false
+			if RAnimation.IsPlaying then
+				RAnimation:Stop()
+			end
+			Humanoid.WalkSpeed = 70
+		end
+	end
+	
+	Humanoid.Running:connect(function(Speed)
+		if Speed >= 10 and Running and not RAnimation.IsPlaying then
+			RAnimation:Play()
+			Humanoid.WalkSpeed = 100
+		elseif Speed >= 10 and not Running and RAnimation.IsPlaying then
+			RAnimation:Stop()
+			Humanoid.WalkSpeed = 70
+		elseif Speed < 10 and RAnimation.IsPlaying then
+			RAnimation:Stop()
+			Humanoid.WalkSpeed = 70
+		end
+	end)
+	
+	Humanoid.Changed:connect(function()
+		if Humanoid.Jump and RAnimation.IsPlaying then
+			RAnimation:Stop()
+		end
+	end)
+	
+		game:GetService('ContextActionService'):BindAction('RunBind', Handler, true, Enum.KeyCode.LeftShift)
+		end)
+end
+coroutine.wrap(MCNFKB_fake_script)()
+local function FSEZNYD_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	frame = script.Parent.Parent.TopBar
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(FSEZNYD_fake_script)()
+local function CBOSOT_fake_script() -- X_3.LocalScript 
+	local script = Instance.new('LocalScript', X_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Credits.Visible = false
+		--script.Parent.Parent.Parent.Parent.MainFrame.Position = {999,999},{999,999}
+		--script.Parent.Parent.Parent.Info.Position = 
+	end)
+end
+coroutine.wrap(CBOSOT_fake_script)()
+local function CLFEC_fake_script() -- Credits_2.LocalScript 
+	local script = Instance.new('LocalScript', Credits_2)
+
+	frame = script.Parent.Parent.Credits
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(CLFEC_fake_script)()
+local function ZUQYV_fake_script() -- ComingSoon.Script 
+	local script = Instance.new('Script', ComingSoon)
+
+	while true do
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "C"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "CO"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COM"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMI"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMIN"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING "
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING S"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING SO"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING SOO"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING SOON"
+		wait(0.8)
+		script.Parent.Parent.ComingSoon.Text = "COMING SOON!"
+		
+	end
+	print("Hello world!")
+	
+end
+coroutine.wrap(ZUQYV_fake_script)()
