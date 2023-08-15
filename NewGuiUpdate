@@ -5,7 +5,7 @@ local Window = OrionLib:MakeWindow({Name = "Test V2", HidePremium = false, Intro
 
 --[[ Tabs ]]
 
-local Tab = Window:MakeTab({
+local OneTab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -23,13 +23,13 @@ Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
 
-local Tab = Window:MakeTab({
+local TwoTab = Window:MakeTab({
 	Name = "Tab 2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-local Tab = Window:MakeTab({
+local ThreeTab = Window:MakeTab({
 	Name = "Tab 3",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
