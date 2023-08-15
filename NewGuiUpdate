@@ -1,68 +1,51 @@
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
 
 --[[ Windows ]]
-local Window = OrionLib:MakeWindow({Name = "Test V2", HidePremium = false, IntroText = "Orion Test V2", SaveConfig = true, ConfigFolder = "OrionVirtualTestV2"})
+local Window = OrionLib:MakeWindow({
+    Name = "Test V2",
+    HidePremium = false,
+    IntroText = "Orion Test V2",
+    SaveConfig = true,
+    ConfigFolder = "OrionVirtualTestV2",
+    IntroEnabled = false -- Add this line to fix the error
+})
 
 --[[ Tabs ]]
 
 local OneTab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Tab 1",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 OneTab:AddButton({
-	Name = "Fly",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/6tmMDEE4", true))()
-      		print("button pressed")
-  	end    
+    Name = "Fly",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/6tmMDEE4", true))()
+        print("button pressed")
+    end
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
 local TwoTab = Window:MakeTab({
-	Name = "Tab 2",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Tab 2",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 local ThreeTab = Window:MakeTab({
-	Name = "Tab 3",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "Tab 3",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
 
 --[[ETC Help]]
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-
-
 --[[Notification]]
-
 OrionLib:MakeNotification({
-	Name = "Welcome!",
-	Content = "This is currently in development and has no means of being released to the public.",
-	Image = "rbxassetid://4483345998",
-	Time = 8
+    Name = "Welcome!",
+    Content = "This is currently in development and has no means of being released to the public.",
+    Image = "rbxassetid://4483345998",
+    Time = 8
 })
-
-
-end
-
-
 
 OrionLib:Init()
