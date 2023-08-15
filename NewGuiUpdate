@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
 
 --[[ Windows ]]
 local Window = OrionLib:MakeWindow({Name = "Test V2", HidePremium = false, IntroText = "Orion Test V2", SaveConfig = true, ConfigFolder = "OrionVirtualTestV2"})
