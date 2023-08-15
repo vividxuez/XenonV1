@@ -11,7 +11,7 @@ local OneTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
+OneTab:AddButton({
 	Name = "Button!",
 	Callback = function()
       		print("button pressed")
