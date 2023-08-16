@@ -2,9 +2,9 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shl
 
 --[[ Windows ]]
 local Window = OrionLib:MakeWindow({
-    Name = "Undetermined",
+    Name = "Test V2",
     HidePremium = false,
-    IntroText = "Total RBX Drama | Undetermined",
+    IntroText = "Orion Test V2",
     SaveConfig = true,
     ConfigFolder = "OrionVirtualTestV2",
     IntroEnabled = true -- Add this line to fix the error
@@ -13,7 +13,7 @@ local Window = OrionLib:MakeWindow({
 --[[ Tabs ]]
 
 local OneTab = Window:MakeTab({
-    Name = "Ey",
+    Name = "Undetermined",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -41,7 +41,7 @@ TwoTab:AddButton({
 })
 
 TwoTab:AddButton({
-    Name = "Auto Complete & Others (will delete this)",
+    Name = "Auto Complete & Others (will delete GUI)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/Roblox%20T.R.D%20Camp%20Script"))()
         print("button pressed")
