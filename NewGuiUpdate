@@ -12,10 +12,6 @@ local Window = OrionLib:MakeWindow({
 
 --[[ Tabs ]]
 
-local Section = OneTab:AddSection({
-	Name = "Test"
-})
-
 local OneTab = Window:MakeTab({
     Name = "Undetermined",
     Icon = "rbxassetid://4483345998",
