@@ -41,7 +41,7 @@ TwoTab:AddButton({
 })
 
 TwoTab:AddButton({
-    Name = "Auto Complete & Others",
+    Name = "Auto Complete & Others (will delete this)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/Roblox%20T.R.D%20Camp%20Script"))()
         print("button pressed")
