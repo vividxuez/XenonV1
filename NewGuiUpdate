@@ -2,9 +2,9 @@ local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shl
 
 --[[ Windows ]]
 local Window = OrionLib:MakeWindow({
-    Name = "Test V2",
+    Name = "Undetermined",
     HidePremium = false,
-    IntroText = "Orion Test V2",
+    IntroText = "Total RBX Drama | Undetermined",
     SaveConfig = true,
     ConfigFolder = "OrionVirtualTestV2",
     IntroEnabled = true -- Add this line to fix the error
