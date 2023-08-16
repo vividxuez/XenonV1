@@ -18,6 +18,10 @@ local OneTab = Window:MakeTab({
     PremiumOnly = false
 })
 
+local Section = OneTab:AddSection({
+	Name = "Section"
+})
+
 OneTab:AddButton({
     Name = "Fly (Other Version)",
     Callback = function()
