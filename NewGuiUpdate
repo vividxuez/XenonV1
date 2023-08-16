@@ -13,7 +13,7 @@ local Window = OrionLib:MakeWindow({
 --[[ Tabs ]]
 
 local Section = OneTab:AddSection({
-	Name = "Test Test Test Test Undetermed Test"
+	Name = "Test"
 })
 
 local OneTab = Window:MakeTab({
