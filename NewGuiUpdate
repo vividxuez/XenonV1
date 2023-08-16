@@ -13,7 +13,7 @@ local Window = OrionLib:MakeWindow({
 --[[ Tabs ]]
 
 local OneTab = Window:MakeTab({
-    Name = "Tab 1",
+    Name = "Undetermined",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
@@ -27,15 +27,40 @@ OneTab:AddButton({
 })
 
 local TwoTab = Window:MakeTab({
-    Name = "Tab 2",
+    Name = "Total RBX Drama",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
 
+TwoTab:AddButton({
+    Name = "Fly & Inf Jump",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CHEATERFUN/total-roblox-drama-script/main/script",true))()
+        print("button pressed")
+    end
+})
+
+TwoTab:AddButton({
+    Name = "Auto Complete & Others",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kureu/Roblox-T.R.D-Camp-Script/main/Roblox%20T.R.D%20Camp%20Script"))()
+        print("button pressed")
+    end
+})
+
+
 local ThreeTab = Window:MakeTab({
-    Name = "Tab 3",
+    Name = "Others",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
+})
+
+ThreeTab:AddButton({
+    Name = "Mobile Keyboard",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+        print("button pressed")
+    end
 })
 
 --[[ETC Help]]
