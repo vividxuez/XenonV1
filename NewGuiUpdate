@@ -19,7 +19,7 @@ local OneTab = Window:MakeTab({
 })
 
 OneTab:AddButton({
-    Name = "Fly",
+    Name = "Fly (Other Version)",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/6tmMDEE4", true))()
         print("button pressed")
